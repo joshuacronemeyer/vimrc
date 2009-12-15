@@ -16,7 +16,7 @@ set incsearch
 set ignorecase
 set smartcase
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
-"colorscheme desert
+"colorscheme desert256
 colorscheme vividchalk
 syntax enable
 set bufhidden=hide
@@ -32,3 +32,5 @@ source ~/.vim/autotag.vim
 "fix grep
 :let Grep_Find_Use_Xargs = 0
 :let Grep_Default_Filelist = '*.rb'
+"add underscore to iskeyword so dw stops at underscore
+set iskeyword=!-~,^*,^45,^124,^34,^192-255,^_
