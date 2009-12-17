@@ -32,5 +32,10 @@ source ~/.vim/autotag.vim
 "fix grep
 :let Grep_Find_Use_Xargs = 0
 :let Grep_Default_Filelist = '*.rb'
-"add underscore to iskeyword so dw stops at underscore
-"set iskeyword=!-~,^*,^45,^124,^34,^192-255,^_,^.
+"map camelcasemotion replacements to w,b,e so they are camelcase and _ aware
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+sunmap w
+sunmap b
+sunmap e
