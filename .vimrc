@@ -33,4 +33,4 @@ source ~/.vim/autotag.vim
 :let Grep_Find_Use_Xargs = 0
 :let Grep_Default_Filelist = '*.rb'
 "add underscore to iskeyword so dw stops at underscore
-set iskeyword=!-~,^*,^45,^124,^34,^192-255,^_
+"set iskeyword=!-~,^*,^45,^124,^34,^192-255,^_,^.
