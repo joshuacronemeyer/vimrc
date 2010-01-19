@@ -16,8 +16,8 @@ set incsearch
 set ignorecase
 set smartcase
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
-"colorscheme desert256
-colorscheme vividchalk
+colorscheme desert256
+"colorscheme vividchalk
 syntax enable
 set bufhidden=hide
 set scrolloff=3
