@@ -10,7 +10,7 @@ set shiftwidth=2
 filetype indent on
 nmap <F11> 1G=G
 imap <F11> <ESC>1G=Ga
-map <C-\> :NERDTreeToggle<CR>
+map <C-\> :NERDTreeFind<CR>
 map <C-n> :FuzzyFinderFile<CR>
 set incsearch
 set ignorecase
