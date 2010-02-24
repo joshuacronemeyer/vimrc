@@ -1,9 +1,14 @@
 "visual stuff
 set ruler
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
-colorscheme desert256
 syntax enable
-"colorscheme vividchalk
+if has('gui_running')
+        colorscheme vividchalk
+    else
+        colorscheme desert256
+    endif 
+"colorscheme desert256
+"colorscheme ir_black
 "set number
 "set wrap!
 
@@ -21,7 +26,7 @@ filetype indent on
 nmap <F11> 1G=G
 imap <F11> <ESC>1G=Ga
 map <C-\> :NERDTreeFind<CR>
-map <C-n> :FuzzyFinderFile<CR>
+map <C-n> :FufFile **/<CR>
 map <C-e> :MRU<CR>
 
 "search
@@ -41,7 +46,7 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 "improve autocomplete menu color
-highlight Pmenu ctermbg=238 gui=bold
+"highlight Pmenu ctermbg=238 gui=bold
 source ~/.vim/autotag.vim
 
 "fix grep
