@@ -2,15 +2,15 @@
 set ruler
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
 syntax enable
-if has('gui_running')
-        colorscheme vividchalk
-    else
-        colorscheme desert256
-    endif 
-"colorscheme desert256
-"colorscheme ir_black
 "set number
 "set wrap!
+
+"use different colorscheme for mac vim and console vim
+if has('gui_running')
+  colorscheme vividchalk
+else
+  colorscheme desert256
+endif 
 
 "2 spaces per tab
 set bs=2
@@ -38,15 +38,6 @@ set smartcase
 set nocompatible
 set bufhidden=hide
 set scrolloff=3
-
-"ruby
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-
-"improve autocomplete menu color
-"highlight Pmenu ctermbg=238 gui=bold
 source ~/.vim/autotag.vim
 
 "fix grep
