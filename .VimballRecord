@@ -1,1 +1,2 @@
 camelcasemotion.vba: call delete('/home/qa/.vim/autoload/camelcasemotion.vim')|call delete('/home/qa/.vim/plugin/camelcasemotion.vim')|call delete('/home/qa/.vim/doc/camelcasemotion.txt')
+supertab.vba: call delete('/Users/joshcronemeyer/.vim/doc/supertab.txt')|call delete('/Users/joshcronemeyer/.vim/plugin/supertab.vim')
